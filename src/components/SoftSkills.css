@@ -1,0 +1,265 @@
+.soft-skills {
+  position: relative;
+  padding: 130px 0;
+
+  background: #f7f5f0;
+  color: #111217;
+
+  overflow: hidden;
+}
+
+.soft-skills::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  border-radius: 50%;
+
+  right: -280px;
+  top: -250px;
+
+  background: rgba(181, 90, 24, 0.06);
+}
+
+.soft-skills-container {
+  position: relative;
+
+  width: min(1180px, 92%);
+  margin: auto;
+
+  z-index: 2;
+}
+
+
+/* HEADING */
+
+.soft-skills-heading {
+  max-width: 760px;
+  margin-bottom: 65px;
+}
+
+.soft-skills-heading .section-label {
+  color: #b55a18;
+}
+
+.soft-skills-heading h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  line-height: 1.02;
+  letter-spacing: -3.5px;
+
+  color: #111217;
+}
+
+.soft-skills-heading h2 span {
+  color: #b55a18;
+}
+
+.soft-skills-heading > p:last-child {
+  max-width: 600px;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #77716a;
+}
+
+
+/* GRID */
+
+.soft-skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+/* CARD */
+
+.soft-skill-card {
+  min-height: 255px;
+
+  padding: 25px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 21px;
+
+  border: 1px solid rgba(20, 20, 20, 0.08);
+
+  background: rgba(255, 255, 255, 0.68);
+
+  box-shadow:
+    0 8px 25px rgba(20, 20, 20, 0.035);
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-8px);
+
+  background: #ffffff;
+
+  border-color: rgba(181, 90, 24, 0.4);
+
+  box-shadow:
+    0 18px 40px rgba(20, 20, 20, 0.07);
+}
+
+
+/* CARD TOP */
+
+.soft-skill-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+}
+
+
+/* ICON */
+
+.soft-skill-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  color: #b55a18;
+
+  background: #ece8e1;
+
+  transition: 0.35s ease;
+}
+
+.soft-skill-card:hover .soft-skill-icon {
+  background: #b55a18;
+
+  color: #ffffff;
+
+  transform: rotate(-5deg);
+}
+
+
+/* NUMBER */
+
+.soft-skill-top > span {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #b3ada5;
+}
+
+
+/* TITLE */
+
+.soft-skill-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 19px;
+
+  letter-spacing: -0.5px;
+
+  color: #111217;
+}
+
+
+/* DESCRIPTION */
+
+.soft-skill-card p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  color: #77716a;
+}
+
+
+/* BOTTOM HOVER LINE */
+
+.soft-skill-line {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: #b55a18;
+
+  transition: width 0.4s ease;
+}
+
+.soft-skill-card:hover .soft-skill-line {
+  width: 100%;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .soft-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .soft-skills {
+    padding: 90px 0;
+  }
+
+  .soft-skills-heading {
+    text-align: center;
+  }
+
+  .soft-skills-heading h2 {
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+  .soft-skills-heading > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .soft-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .soft-skill-card {
+    min-height: 220px;
+  }
+
+  .soft-skill-top {
+    margin-bottom: 35px;
+  }
+}

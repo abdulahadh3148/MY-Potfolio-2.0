@@ -1,0 +1,492 @@
+.hero {
+  min-height: calc(100vh - 78px);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(181, 90, 24, 0.06),
+      transparent 28%
+    ),
+    #f4f1eb;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  left: -200px;
+  bottom: -200px;
+
+  border-radius: 50%;
+
+  background: rgba(181, 90, 24, 0.04);
+}
+
+.hero-container {
+  width: min(1180px, 92%);
+  margin: auto;
+
+  padding: 80px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.hero-label {
+  margin-bottom: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  color: #b55a18;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(50px, 5vw, 76px);
+  font-weight: 800;
+
+  line-height: 1.02;
+  letter-spacing: -4px;
+
+  color: #111217;
+}
+
+.hero-content h1 span {
+  color: #b55a18;
+}
+
+.hero-description {
+  max-width: 580px;
+
+  margin-top: 28px;
+  margin-bottom: 32px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #6e6a64;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 21px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.primary-button {
+  background: #111217;
+  color: white;
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(17, 18, 23, 0.15);
+}
+
+.secondary-button {
+  background: rgba(255, 255, 255, 0.5);
+
+  color: #111217;
+
+  border: 1px solid #d9d4cd;
+}
+
+.secondary-button:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.hero-socials {
+  display: flex;
+
+  gap: 10px;
+}
+
+.hero-socials a {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid #d9d4cd;
+
+  color: #111217;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  transition: 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: white;
+
+  background: #111217;
+
+  transform: translateY(-3px);
+}
+
+/* Monitor */
+
+.hero-visual {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 520px;
+}
+
+.monitor {
+  position: relative;
+
+  width: 100%;
+  max-width: 540px;
+
+  padding: 14px;
+
+  border-radius: 28px;
+
+  background: #111217;
+
+  box-shadow:
+    0 35px 60px rgba(17, 18, 23, 0.18),
+    0 10px 20px rgba(17, 18, 23, 0.1);
+}
+
+.monitor-top {
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8px;
+
+  color: white;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.monitor-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.monitor-brand span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #b55a18;
+}
+
+.monitor-status {
+  font-size: 7px;
+  color: #999;
+}
+
+.monitor-screen {
+  position: relative;
+
+  height: 360px;
+
+  overflow: hidden;
+
+  border-radius: 17px;
+
+  background: #e8e5de;
+}
+
+.monitor-screen img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top center;
+
+  filter: grayscale(10%);
+}
+
+.screen-overlay {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  padding: 10px 14px;
+
+  border-radius: 50px;
+
+  background: rgba(17, 18, 23, 0.8);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+}
+
+.monitor-bottom {
+  height: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+}
+
+.monitor-dot {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #555;
+}
+
+.monitor-dot.active {
+  background: #b55a18;
+}
+
+.monitor-stand {
+  position: absolute;
+
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stand-neck {
+  width: 70px;
+  height: 50px;
+
+  background: #111217;
+
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+}
+
+.stand-base {
+  width: 190px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: #111217;
+}
+
+.floating-code {
+  position: absolute;
+
+  top: 10%;
+  right: 0;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(17, 18, 23, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  backdrop-filter: blur(15px);
+
+  font-weight: 700;
+
+  color: #b55a18;
+
+  box-shadow: 0 12px 30px rgba(20, 20, 20, 0.06);
+}
+
+.floating-status {
+  position: absolute;
+
+  left: -20px;
+  bottom: 75px;
+
+  padding: 12px 16px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 12px 30px rgba(20, 20, 20, 0.07);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #444;
+}
+
+.floating-status span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #48a868;
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding-top: 70px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+  }
+
+  .floating-status {
+    left: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    width: 90%;
+
+    padding: 55px 0 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 390px;
+
+    margin-top: 25px;
+  }
+
+  .monitor {
+    border-radius: 20px;
+  }
+
+  .monitor-screen {
+    height: 260px;
+  }
+
+  .floating-code {
+    display: none;
+  }
+
+  .floating-status {
+    bottom: 50px;
+  }
+
+  .stand-neck {
+    height: 35px;
+  }
+
+  .stand-base {
+    width: 130px;
+  }
+}

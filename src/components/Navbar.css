@@ -1,0 +1,155 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(244, 241, 235, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(20, 20, 20, 0.06);
+}
+
+.navbar-container {
+  width: min(1180px, 92%);
+  height: 78px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  letter-spacing: -1px;
+
+  color: #111217;
+}
+
+.logo span {
+  color: #b55a18;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-links a {
+  position: relative;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #555;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #b55a18;
+
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #111217;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hire-button {
+  padding: 11px 20px;
+
+  border: 1px solid #d8d4cd;
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #111217;
+  background: #fff;
+
+  transition: 0.3s ease;
+}
+
+.hire-button:hover {
+  background: #111217;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: #111217;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 70px;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px;
+
+    flex-direction: column;
+
+    background: #f4f1eb;
+
+    border-bottom: 1px solid #ddd;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-20px);
+
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+  .hire-button {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}

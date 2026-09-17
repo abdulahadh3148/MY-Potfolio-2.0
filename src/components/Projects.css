@@ -1,0 +1,890 @@
+.projects {
+  padding: 140px 0;
+
+  background: #f7f5f0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.projects-heading {
+  max-width: 760px;
+
+  margin-bottom: 80px;
+}
+
+.projects-heading h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(
+    46px,
+    5vw,
+    70px
+  );
+
+  line-height: 1.02;
+
+  letter-spacing: -4px;
+
+  color: #111217;
+}
+
+.projects-heading h2 span {
+  color: #b55a18;
+}
+
+.projects-heading > p:last-child {
+  max-width: 570px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #77716a;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 38px;
+}
+
+.project-card {
+  min-height: 560px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.85fr 1.15fr;
+
+  align-items: stretch;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  border: 1px solid
+    rgba(20, 20, 20, 0.07);
+
+  background: #fff;
+
+  box-shadow:
+    0 20px 60px
+    rgba(20, 20, 20, 0.055);
+}
+
+
+/* LEFT */
+
+.project-info {
+  padding: 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    45px 1fr;
+
+  gap: 20px;
+}
+
+.project-number {
+  padding-top: 5px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #b55a18;
+}
+
+.project-type {
+  margin: 0 0 22px;
+
+  font-size: 9px;
+
+  letter-spacing: 2.5px;
+
+  color: #9b948c;
+
+  font-weight: 700;
+}
+
+.project-info h3 {
+  margin: 0;
+
+  font-size: clamp(
+    34px,
+    3.5vw,
+    52px
+  );
+
+  line-height: 1;
+
+  letter-spacing: -2.5px;
+
+  color: #111217;
+}
+
+.project-info h4 {
+  margin:
+    10px 0
+    25px;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  color: #b55a18;
+}
+
+.project-description {
+  max-width: 470px;
+
+  margin-bottom: 28px;
+
+  font-size: 13px;
+
+  line-height: 1.9;
+
+  color: #77716a;
+}
+
+
+/* TAGS */
+
+.project-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 35px;
+}
+
+.project-tags span {
+  padding:
+    8px 12px;
+
+  border-radius: 50px;
+
+  border: 1px solid #e3dfd9;
+
+  background: #faf9f6;
+
+  font-size: 9px;
+
+  color: #69645e;
+
+  font-weight: 600;
+}
+
+
+/* BUTTON */
+
+.project-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.project-primary-button {
+  min-height: 46px;
+
+  padding: 0 18px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  background: #111217;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.project-primary-button:hover {
+  transform:
+    translateY(-3px);
+
+  background: #b55a18;
+
+  box-shadow:
+    0 12px 30px
+    rgba(181, 90, 24, 0.2);
+}
+
+
+/* =========================
+   RIGHT VISUAL
+========================= */
+
+.project-visual {
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #eae6df,
+      #ddd7ce
+    );
+}
+
+.project-mockup {
+  width: 100%;
+
+  max-width: 610px;
+
+  transform:
+    perspective(1300px)
+    rotateY(-4deg)
+    rotateX(2deg);
+
+  filter:
+    drop-shadow(
+      0 30px 35px
+      rgba(20, 20, 20, 0.16)
+    );
+}
+
+.mockup-window {
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  border:
+    7px solid #16171b;
+
+  background: white;
+}
+
+.mockup-browser {
+  height: 38px;
+
+  padding: 0 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  border-bottom:
+    1px solid #eaeaea;
+
+  background: #fafafa;
+}
+
+.browser-dots {
+  display: flex;
+
+  gap: 5px;
+}
+
+.browser-dots span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #c5c1bb;
+}
+
+.browser-dots span:first-child {
+  background: #b55a18;
+}
+
+.mockup-browser p {
+  margin: auto;
+
+  transform:
+    translateX(-15px);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  color: #777;
+}
+
+
+/* =========================
+   DRIVING SCHOOL MOCKUP
+========================= */
+
+.driving-dashboard {
+  min-height: 390px;
+
+  display: grid;
+
+  grid-template-columns:
+    62px 1fr;
+
+  background: #f4f5f6;
+}
+
+.mock-sidebar {
+  padding: 20px 13px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 22px;
+
+  background: #111217;
+}
+
+.mock-logo {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #b55a18;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.mock-sidebar > span {
+  width: 25px;
+  height: 4px;
+
+  border-radius: 10px;
+
+  background: #35363b;
+}
+
+.mock-main {
+  padding: 30px;
+}
+
+.mock-welcome {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.mock-welcome small {
+  font-size: 6px;
+
+  letter-spacing: 1.5px;
+
+  color: #999;
+}
+
+.mock-welcome h4 {
+  margin:
+    5px 0 0;
+
+  font-size: 23px;
+
+  letter-spacing: -1px;
+}
+
+.mock-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #111217;
+
+  color: white;
+
+  font-size: 10px;
+}
+
+.mock-stats {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.mock-stats div {
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  border-radius: 14px;
+
+  background: white;
+}
+
+.mock-stats strong {
+  font-size: 22px;
+
+  color: #111217;
+}
+
+.mock-stats span {
+  margin-top: 7px;
+
+  font-size: 7px;
+
+  color: #999;
+}
+
+.mock-bottom-grid {
+  margin-top: 12px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.7fr 0.8fr;
+
+  gap: 10px;
+}
+
+.mock-chart {
+  height: 150px;
+
+  padding: 22px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content:
+    space-between;
+
+  gap: 10px;
+
+  background: white;
+
+  border-radius: 14px;
+}
+
+.chart-bar {
+  flex: 1;
+
+  border-radius:
+    5px 5px 2px 2px;
+
+  background: #ded8d0;
+}
+
+.bar-one {
+  height: 40%;
+}
+
+.bar-two {
+  height: 70%;
+
+  background: #b55a18;
+}
+
+.bar-three {
+  height: 50%;
+}
+
+.bar-four {
+  height: 85%;
+
+  background: #111217;
+}
+
+.bar-five {
+  height: 62%;
+}
+
+.mock-card-small {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  border-radius: 14px;
+
+  background: #111217;
+
+  color: white;
+
+  text-align: center;
+}
+
+.mock-card-small svg {
+  color: #c56a27;
+}
+
+.mock-card-small span {
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOSQUE
+========================= */
+
+.mosque-ui {
+  position: relative;
+
+  min-height: 390px;
+
+  padding: 28px 35px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #102b25,
+      #183e35
+    );
+
+  color: white;
+}
+
+.mosque-nav {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+}
+
+.mosque-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+}
+
+.mosque-menu {
+  display: flex;
+
+  gap: 12px;
+}
+
+.mosque-menu span {
+  width: 25px;
+  height: 3px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.35
+    );
+
+  border-radius: 50px;
+}
+
+.mosque-content {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 85px;
+}
+
+.mosque-content small {
+  color: #c4a961;
+
+  font-size: 7px;
+
+  letter-spacing: 2.5px;
+}
+
+.mosque-content h4 {
+  margin:
+    12px 0
+    14px;
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.mosque-content p {
+  font-size: 9px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.6
+    );
+}
+
+.mosque-button {
+  width: fit-content;
+
+  margin-top: 25px;
+
+  padding:
+    10px 18px;
+
+  border-radius: 50px;
+
+  background: #c4a961;
+
+  color: #102b25;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.mosque-bg-icon {
+  position: absolute;
+
+  right: -30px;
+
+  bottom: -35px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.projects-footer {
+  margin-top: 50px;
+
+  padding-top: 30px;
+
+  border-top:
+    1px solid
+    rgba(
+      20,
+      20,
+      20,
+      0.09
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+}
+
+.projects-footer p {
+  font-size: 11px;
+
+  color: #918a82;
+}
+
+.projects-footer a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #111217;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.projects-footer a:hover {
+  color: #b55a18;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-visual {
+    min-height: 500px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .projects {
+    padding: 90px 0;
+  }
+
+  .projects-heading {
+    text-align: center;
+  }
+
+  .projects-heading h2 {
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+  .projects-heading > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-info {
+    padding: 35px 25px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .project-number {
+    margin-bottom: -8px;
+  }
+
+  .project-info h3 {
+    font-size: 37px;
+  }
+
+  .project-visual {
+    min-height: 330px;
+
+    padding: 20px;
+  }
+
+  .project-mockup {
+    transform: none;
+  }
+
+  .driving-dashboard,
+  .mosque-ui {
+    min-height: 280px;
+  }
+
+  .mock-main {
+    padding: 18px;
+  }
+
+  .mock-stats div {
+    padding: 12px;
+  }
+
+  .mock-stats strong {
+    font-size: 16px;
+  }
+
+  .mock-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-card-small {
+    display: none;
+  }
+
+  .mock-chart {
+    height: 100px;
+  }
+
+  .mosque-content {
+    margin-top: 55px;
+  }
+
+  .mosque-content h4 {
+    font-size: 32px;
+  }
+
+  .projects-footer {
+    flex-direction: column;
+
+    gap: 15px;
+
+    align-items: flex-start;
+  }
+
+}
