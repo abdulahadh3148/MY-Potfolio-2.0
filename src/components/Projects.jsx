@@ -7,6 +7,7 @@ import "./Projects.css";
 import erangaDrivingImg from "../assets/images/eranga_driving.png";
 import jamiulAzharImg from "../assets/images/jamiul_azhar.png";
 import sparkleSalonImg from "../assets/images/sparkle_salon.png";
+import abdulPortfolioImg from "../assets/images/abdul_portfolio.png";
 
 const projects = [
   {
@@ -54,6 +55,22 @@ const projects = [
     github:
       "https://github.com/abdulahadh3148",
     image: sparkleSalonImg,
+  },
+  {
+    number: "04",
+    title: "Abdul Ahadh — Portfolio 2.0",
+    subtitle: "Personal Developer Platform",
+    description:
+      "A fast, modern personal portfolio engineered to showcase engineering projects, core CS fundamentals, and interactive web experiences with custom typography, responsive design, and smooth animations.",
+    tags: [
+      "React.js",
+      "Vite",
+      "Framer Motion",
+      "CSS3",
+    ],
+    github:
+      "https://github.com/abdulahadh3148/MY-Potfolio-2.0",
+    image: abdulPortfolioImg,
   },
 ];
 

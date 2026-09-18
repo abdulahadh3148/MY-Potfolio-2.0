@@ -227,19 +227,21 @@
 }
 
 .knowledge-number {
-  font-size: 11px;
+  font-size: 13px;
 
   color: #b55a18;
 
   font-weight: 700;
 
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .knowledge-left p {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 
-  font-size: 9px;
+  font-size: 11px;
+
+  font-weight: 600;
 
   letter-spacing: 2px;
 
@@ -249,9 +251,9 @@
 .knowledge-left h3 {
   margin: 0;
 
-  font-size: 26px;
+  font-size: 28px;
 
-  line-height: 1.3;
+  line-height: 1.25;
 
   font-weight: 600;
 
@@ -268,23 +270,42 @@
 
   flex-wrap: wrap;
 
-  gap: 9px;
+  gap: 12px;
 }
 
 .knowledge-tags span {
-  padding: 10px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 18px;
 
   border-radius: 50px;
 
-  border: 1px solid #ded9d2;
+  border: 1px solid #ddd7cf;
 
-  background: rgba(255, 255, 255, 0.65);
+  background: #ffffff;
 
-  color: #6f6962;
+  color: #1f1e24;
 
-  font-size: 10px;
+  font-size: 13.5px;
 
-  transition: 0.3s ease;
+  font-weight: 500;
+
+  box-shadow: 0 2px 8px rgba(17, 18, 23, 0.04);
+
+  transition: all 0.25s ease;
+}
+
+.knowledge-tags span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b55a18;
+  opacity: 0.75;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .knowledge-tags span:hover {
@@ -292,9 +313,16 @@
 
   border-color: #b55a18;
 
-  background: white;
+  background: #ffffff;
+
+  box-shadow: 0 6px 18px rgba(181, 90, 24, 0.12);
 
   transform: translateY(-2px);
+}
+
+.knowledge-tags span:hover::before {
+  transform: scale(1.3);
+  opacity: 1;
 }
 
 
@@ -359,5 +387,10 @@
 
   .knowledge-left h3 {
     font-size: 22px;
+  }
+
+  .knowledge-tags span {
+    font-size: 12.5px;
+    padding: 9px 14px;
   }
 }

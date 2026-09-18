@@ -175,14 +175,14 @@ function Skills() {
           </div>
 
           <div className="knowledge-tags">
-            <span>Object-Oriented Programming</span>
-            <span>Data Structures</span>
-            <span>Database Design</span>
-            <span>REST APIs</span>
+            <span>Object-Oriented Programming (OOP)</span>
+            <span>Data Structures & Algorithms</span>
+            <span>Database Design (SQL)</span>
+            <span>RESTful APIs</span>
             <span>Software Engineering</span>
-            <span>Responsive Design</span>
+            <span>Responsive Web Design</span>
             <span>Git Workflow</span>
-            <span>Deployment</span>
+            <span>Deployment & CI/CD</span>
           </div>
         </motion.div>
 
