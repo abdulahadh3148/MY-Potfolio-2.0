@@ -70,11 +70,13 @@ const projects = [
     ],
     github:
       "https://github.com/abdulahadh3148/MY-Potfolio-2.0",
+    live: "#hero",
+    isCurrentSite: true,
     image: abdulPortfolioImg,
   },
 ];
 
-function ProjectVisual({ image, title }) {
+function ProjectVisual({ image, title, isCurrentSite }) {
   return (
     <div className="project-mockup">
       <div className="mockup-window">
@@ -86,6 +88,12 @@ function ProjectVisual({ image, title }) {
           </div>
 
           <p>{title}</p>
+
+          {isCurrentSite && (
+            <span className="mockup-live-indicator">
+              <span className="live-pulse-dot"></span> LIVE
+            </span>
+          )}
         </div>
 
         <img 
@@ -198,18 +206,35 @@ function Projects() {
                     </div>
 
                     <div className="project-buttons">
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          className="project-live-button"
+                          onClick={(e) => {
+                            if (project.isCurrentSite) {
+                              e.preventDefault();
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }
+                          }}
+                        >
+                          <span className="live-pulse-dot"></span>
+                          {project.isCurrentSite ? "Live Site · You're Here" : "Live Demo"}
+                          <ArrowUpRight size={15} />
+                        </a>
+                      )}
+
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
-                        className="project-primary-button"
+                        className={project.live ? "project-secondary-button" : "project-primary-button"}
                       >
-                        <Github size={17} />
+                        <Github size={16} />
 
                         View GitHub
 
                         <ArrowUpRight
-                          size={16}
+                          size={15}
                         />
                       </a>
                     </div>
@@ -229,6 +254,7 @@ function Projects() {
                   <ProjectVisual
                     image={project.image}
                     title={project.title}
+                    isCurrentSite={project.isCurrentSite}
                   />
                 </motion.div>
 
