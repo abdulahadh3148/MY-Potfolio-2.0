@@ -1,7 +1,7 @@
 .about {
   position: relative;
 
-  padding: 130px 0;
+  padding: 85px 0;
 
   overflow: hidden;
 
@@ -276,7 +276,7 @@
 @media (max-width: 900px) {
 
   .about {
-    padding: 100px 0;
+    padding: 65px 0;
   }
 
   .about-container {
@@ -300,7 +300,7 @@
 @media (max-width: 600px) {
 
   .about {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .about-image-card {

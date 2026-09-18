@@ -1,7 +1,7 @@
 .process {
   position: relative;
 
-  padding: 130px 0;
+  padding: 85px 0;
 
   background: #f4f1eb;
 
@@ -17,7 +17,7 @@
 .process-heading {
   max-width: 730px;
 
-  margin-bottom: 65px;
+  margin-bottom: 48px;
 }
 
 .process-heading h2 {
@@ -204,7 +204,7 @@
 
 @media (max-width: 650px) {
   .process {
-    padding: 90px 0;
+    padding: 50px 0;
   }
 
   .process-heading {

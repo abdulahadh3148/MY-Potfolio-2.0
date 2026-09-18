@@ -1,5 +1,5 @@
 .projects {
-  padding: 140px 0;
+  padding: 90px 0;
 
   background: #f7f5f0;
 
@@ -20,7 +20,7 @@
 .projects-heading {
   max-width: 760px;
 
-  margin-bottom: 80px;
+  margin-bottom: 52px;
 }
 
 .projects-heading h2 {
@@ -800,7 +800,7 @@
 @media (max-width: 650px) {
 
   .projects {
-    padding: 90px 0;
+    padding: 55px 0;
   }
 
   .projects-heading {

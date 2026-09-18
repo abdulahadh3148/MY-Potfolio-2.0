@@ -25,7 +25,7 @@ function Hero() {
           }}
         >
           <p className="hero-label">
-            SOFTWARE ENGINEER · FULL-STACK DEVELOPER
+            INTERN SOFTWARE ENGINEER
           </p>
 
           <h1>

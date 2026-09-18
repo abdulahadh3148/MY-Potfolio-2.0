@@ -1,5 +1,5 @@
 .skills {
-  padding: 130px 0;
+  padding: 85px 0;
   background: #f7f5f0;
   color: #111217;
 
@@ -37,7 +37,7 @@
 
 .skills-heading {
   max-width: 760px;
-  margin-bottom: 65px;
+  margin-bottom: 48px;
 }
 
 .skills-heading .section-label {
@@ -315,7 +315,7 @@
 
 @media (max-width: 768px) {
   .skills {
-    padding: 90px 0;
+    padding: 50px 0;
   }
 
   .skills-heading {
