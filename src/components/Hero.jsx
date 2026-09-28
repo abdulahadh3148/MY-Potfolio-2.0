@@ -73,7 +73,7 @@ function Hero() {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/m-f-abdul-ahadh-1aa231396"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -81,7 +81,7 @@ function Hero() {
               <Linkedin size={18} />
             </a>
 
-            <a href="mailto:your-email@example.com" aria-label="Email">
+            <a href="mailto:?subject=Internship%20opportunity%20for%20Abdul" aria-label="Email">
               <Mail size={18} />
             </a>
           </div>

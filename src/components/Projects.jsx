@@ -18,9 +18,9 @@ const projects = [
       "A full-stack digital platform designed to manage students, instructors, practical classes, payments, progress tracking, mock theory tests and notifications for a driving school.",
     tags: [
       "React.js",
-      "Node.js",
-      "Express.js",
-      "Firebase",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Cloud Functions",
     ],
     github:
       "https://github.com/abdulahadh3148/Eranga-Driving-School-Management-Platform",
@@ -53,7 +53,7 @@ const projects = [
       "Frontend",
     ],
     github:
-      "https://github.com/abdulahadh3148",
+      "https://github.com/abdulahadh3148/Sparkle-Salon",
     image: sparkleSalonImg,
   },
   {

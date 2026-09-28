@@ -1,72 +1,54 @@
-# Abdul's Developer Portfolio 🚀
+# Abdul Ahadh — Developer Portfolio
 
-A modern, highly interactive, and premium personal portfolio website built to showcase my skills, projects, and journey as a Software Engineer.
+A responsive portfolio website for presenting my software engineering skills, selected projects, CV, and professional contact links.
 
-## ✨ Features
+**Live portfolio:** [abbhu-portfolio-f4ew.vercel.app](https://abbhu-portfolio-f4ew.vercel.app)  
+**GitHub:** [abdulahadh3148](https://github.com/abdulahadh3148) · **LinkedIn:** [M. F. Abdul Ahadh](https://www.linkedin.com/in/m-f-abdul-ahadh-1aa231396)
 
-- **Premium UI/UX:** Designed with a clean aesthetic, featuring subtle gradients, glassmorphism, and meticulously crafted CSS animations.
-- **Interactive Animations:** Powered by `framer-motion` for smooth scroll reveals, floating elements, and dynamic hover states.
-- **Custom Project Mockups:** Showcases featured projects inside beautiful, CSS-rendered 3D browser mockups instead of generic images.
-- **Fully Responsive:** Carefully styled across Desktop, Tablet, and Mobile devices for a flawless viewing experience anywhere.
-- **Component-Driven:** Built cleanly with React functional components and modular CSS.
+![Portfolio project preview](src/assets/images/abdul_portfolio.png)
 
-## 🛠️ Tech Stack
+## Highlights
 
-- **Framework:** [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
-- **Styling:** Custom CSS (with advanced features like `clamp()`, CSS grid, CSS variables, and pseudo-elements)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+- Responsive React portfolio with About, Skills, Process, Projects, Journey, and Contact sections.
+- Scroll and interaction animations with Framer Motion.
+- Featured work with project summaries, technology labels, and repository links.
+- Downloadable CV.
 
-## 📂 Project Structure
+## Tech stack
 
-```text
-src/
-├── assets/         # Images, PDFs (CV), and static files
-├── components/     # React components and their corresponding CSS files
-│   ├── About       # Personal background and introduction
-│   ├── Contact     # Connect form and social links
-│   ├── Hero        # Landing view with floating 3D monitor animation
-│   ├── Intro       # Initial loading animation sequence
-│   ├── Journey     # Vertical timeline of education & experience
-│   ├── Navbar      # Sticky glassmorphism navigation
-│   ├── Process     # Development workflow breakdown
-│   ├── Projects    # Featured work with 3D browser mockups
-│   ├── Skills      # Technical toolkit and core competencies
-│   └── SoftSkills  # Interpersonal and professional skills
-├── App.jsx         # Main application layout and assembly
-└── index.css       # Global resets, fonts, and base variables
+- React 19 and Vite
+- Framer Motion
+- Custom CSS
+- Lucide React and React Icons
+
+## Run locally
+
+Requirements: Node.js and npm.
+
+```bash
+git clone https://github.com/abdulahadh3148/MY-Potfolio-2.0.git
+cd MY-Potfolio-2.0
+npm install
+npm run dev
 ```
 
-## 🚀 Getting Started
+Open the local URL printed by Vite. To check a production build:
 
-To run this project locally on your machine:
+```bash
+npm run build
+npm run preview
+```
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/abdulahadh3148/abdul-portfolio.git
-   ```
+## Featured projects
 
-2. **Navigate into the project directory:**
-   ```bash
-   cd abdul-portfolio
-   ```
+- [Eranga Driving School Management Platform](https://github.com/abdulahadh3148/Eranga-Driving-School-Management-Platform) — React, Firebase Authentication, Cloud Firestore, and Cloud Functions.
+- [5Rose Coolspot Feedback](https://github.com/abdulahadh3148/5rose-feedback-saas) — Laravel customer feedback project.
+- [Sparkle Salon](https://github.com/abdulahadh3148/Sparkle-Salon) — salon booking and management web application.
+- [Jamiul Azhar Mosque](https://github.com/abdulahadh3148/Jamiul-Azhar-Mosque) — community web platform.
 
-3. **Install the dependencies:**
-   ```bash
-   npm install
-   ```
+## Contact
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:5173`
-
-## 📬 Contact
-
-- **GitHub:** [@abdulahadh3148](https://github.com/abdulahadh3148)
-- **LinkedIn:** [M F Abdul Ahadh](https://www.linkedin.com/in/m-f-abdul-ahadh-1aa231396)
+Use the LinkedIn link above or the contact section on the live portfolio.
 
 ---
-*Designed and built by Abdul Ahadh.*
+Built by Abdul Ahadh.
