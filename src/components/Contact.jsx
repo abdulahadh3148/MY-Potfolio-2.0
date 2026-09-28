@@ -36,7 +36,7 @@ function Contact() {
     );
 
     window.location.href =
-      `mailto:YOUR_EMAIL@gmail.com?subject=${subject}&body=${body}`;
+      `mailto:?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -145,7 +145,7 @@ function Contact() {
                 </a>
 
                 <a
-                  href="mailto:YOUR_EMAIL@gmail.com"
+                  href="mailto:?subject=Internship%20opportunity%20for%20Abdul"
                   className="contact-link"
                 >
                   <div className="contact-link-icon">
